@@ -4,6 +4,8 @@ This package is part of Fruit Framework.
 
 CookieKit is set of tools helping you manage cookies for you web app.
 
+[![Build Status](https://travis-ci.org/Ronmi/fruit-cookiekit.svg?branch=master)](https://travis-ci.org/Ronmi/fruit-cookiekit)
+
 CookieKit is still under development, not usable now.
 
 ## Synopsis
