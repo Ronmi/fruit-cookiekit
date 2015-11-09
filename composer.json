@@ -1,0 +1,29 @@
+{
+    "name": "fruit/cookiekit",
+    "description": "Cookie monster of Fruit framework",
+    "authors": [
+        {
+            "name": "Ronmi Ren",
+            "email": "ronmi@patrolavia.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*",
+        "squizlabs/php_codesniffer": "*",
+	"phploc/phploc": "*",
+	"pdepend/pdepend": "*",
+	"phpmd/phpmd": "*",
+	"sebastian/phpcpd": "*"
+    },
+    "require": {
+    },
+    "suggest": {
+	"ext-http": "~2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fruit\\CookieKit\\": "src",
+            "FruitTest\\CookieKit\\": "test"
+        }
+    }
+}
