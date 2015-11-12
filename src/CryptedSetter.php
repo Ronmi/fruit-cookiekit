@@ -26,7 +26,7 @@ class CryptedSetter implements CookieSetter
 
     public function set(array $delete, array $cookies)
     {
-        array_walk($cookies, function(&$val){
+        array_walk($cookies, function (&$val) {
             $val[0] = $this->crypter->encrypt($val[0]);
         });
         return $this->setter->set($delete, $cookies);
