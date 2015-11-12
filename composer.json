@@ -13,12 +13,14 @@
 	"phploc/phploc": "*",
 	"pdepend/pdepend": "*",
 	"phpmd/phpmd": "*",
-	"sebastian/phpcpd": "*"
+	"sebastian/phpcpd": "*",
+	"fruit/cryptokit": "0.0.0"
     },
     "require": {
     },
     "suggest": {
-	"ext-http": "~2"
+	"ext-http": "~2",
+	"fruit/cryptokit": "0.0.0"
     },
     "autoload": {
         "psr-4": {
