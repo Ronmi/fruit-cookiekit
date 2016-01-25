@@ -22,6 +22,13 @@ class PeclHttpCookieSetter implements CookieSetter
         $this->cookies = $tmp->getCookies();
     }
 
+    public static function __set_state(array $props)
+    {
+        $ret = new self('');
+        $ret->cookies = $props['cookies'];
+        return $ret;
+    }
+
     public function get()
     {
         return $this->cookies;

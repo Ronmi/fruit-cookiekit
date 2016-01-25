@@ -4,6 +4,11 @@ namespace Fruit\CookieKit;
 
 class DefaultCookieSetter implements CookieSetter
 {
+    public static function __set_state(array $props)
+    {
+        return new self;
+    }
+
     public function get()
     {
         return $_COOKIE;

@@ -15,6 +15,11 @@ class CryptedSetter implements CookieSetter
         $this->crypter = $crypter;
     }
 
+    public static function __set_state(array $props)
+    {
+        return new self($props['crypter'], $props['setter']);
+    }
+
     public function get()
     {
         $data = $this->setter->get();

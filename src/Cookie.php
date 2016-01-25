@@ -27,6 +27,11 @@ class Cookie implements ArrayAccess, IteratorAggregate
         $this->setter = $setter;
     }
 
+    public static function __set_state(array $props)
+    {
+        return new self($props['setter']);
+    }
+
     /**
      * Set cookie, used only when you need to specify CookieSpec
      *
